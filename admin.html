@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - All Appointments</title>
+</head>
+<body>
+    <h1>All Bookings</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th><th>Email</th><th>Date</th><th>Time</th><th>Reason</th>
+        </tr>
+        {% for a in appointments %}
+        <tr>
+            <td>{{ a.name }}</td><td>{{ a.email }}</td><td>{{ a.date }}</td><td>{{ a.time }}</td><td>{{ a.reason }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
